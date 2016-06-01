@@ -162,8 +162,8 @@ int main(){
 		}	
 		printf("Fim do FILHO1\n")       	  ;
 	  
-		//sprintf(message.msgtext, "Filho 1 finalizado\n");
-		//msgsnd(msgId, &message, strlen(message.msgtext), IPC_NOWAIT);
+		sprintf(message.msgtext, "Filho 1 finalizado\n");
+		msgsnd(msgId, &message, strlen(message.msgtext), IPC_NOWAIT);
 		printf("Fim filho1\n");
 
 	}
